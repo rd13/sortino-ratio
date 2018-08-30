@@ -1,0 +1,31 @@
+{
+  "name": "sortino-ratio",
+  "version": "1.0.0",
+  "description": "Sortino ratio",
+  "main": "dist/sortino-ratio.cjs.js",
+  "module": "dist/sortino-ratio.es.js",
+  "jsnext:main": "dist/sortino-ratio.es.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "sortino",
+    "sortino-ratio"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "mailstu@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/rd13/sortino-ratio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rd13/sortino-ratio.git"
+  },
+  "devDependencies": {
+    "rollup": "^0.65.0"
+  }
+}

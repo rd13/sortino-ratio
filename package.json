@@ -16,7 +16,8 @@
   "scripts": {
     "prebuild": "rm -rf dist/*",
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && mocha"
   },
   "author": "mailstu@gmail.com",
   "license": "MIT",
@@ -26,6 +27,8 @@
     "url": "git+https://github.com/rd13/sortino-ratio.git"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
     "rollup": "^0.65.0"
   }
 }

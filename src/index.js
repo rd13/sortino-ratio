@@ -9,9 +9,9 @@
  * @return {number}       
  *
  * @example
- * let x = [2, 1, -1, 18, 8, -2, 1, -1]
+ * const return_values = [2, 1, -1, 18, 8, -2, 1, -1]
  *
- * sortino(x);
+ * sortino(return_values);
  * // 3.7527767497325675
  * 
  */

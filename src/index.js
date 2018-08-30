@@ -4,8 +4,7 @@
  * @description Calculate a Sortino ratio - a measure of risk similar to Sharpe ratio based on downside deviation
  * 
  * @param  {array} return_values asset/portfolio return values
- * @param  {number} risk free-risk rate
- * @param  {number} target_return minimum acceptable return
+ * @param  {number} target_return expected portfolio return (default 0)
  * @return {number}       
  *
  * @example

@@ -24,6 +24,8 @@ function sortino (return_values, target_return = 0) {
 	// return minus the target return
 	const avg_return = return_values.reduce( ( a, b ) => a + b, 0 ) / return_values.length;
 
+	const sortino_numerator = avg_return - target_return;
+
 	// 2) For each data point, calculate
 	// the difference between that data
 	// point and the target level. For data
@@ -51,7 +53,7 @@ function sortino (return_values, target_return = 0) {
 	const target_downside_deviation = Math.sqrt(underperformance_squared_average);
 
 	// 6) Calculate the Sortino ratio
-	const sortino_ratio = avg_return / target_downside_deviation;
+	const sortino_ratio = sortino_numerator / target_downside_deviation;
 
 	return sortino_ratio
 }

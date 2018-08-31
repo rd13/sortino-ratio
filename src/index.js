@@ -51,7 +51,7 @@ export default function sortino (return_values, target_return = 0) {
 	const target_downside_deviation = Math.sqrt(underperformance_squared_average)
 
 	// 6) Calculate the Sortino ratio
-	const sortino_ratio = avg_return / target_downside_deviation
+	const sortino_ratio = sortino_numerator / target_downside_deviation
 
 	return sortino_ratio
 }
